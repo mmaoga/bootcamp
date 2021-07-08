@@ -26,11 +26,11 @@
 
 # 	print (j)
 
-# j = 1
-# for i in range (0, 10):
-# 	j += j
+j = 1
+for i in range (0, 10):
+	j += j
 
-# 	print (j)
+	print (j)
 
 # for j in range (0, 10):
 #  	j += j
@@ -49,14 +49,14 @@
 # 	# print (n)
 
 
-f = 0
-g = 1
+# f = 0
+# g = 1
 
-for i in range (0, 10):
-	f = f + g
-	g = f - g
+# for i in range (0, 10):
+# 	f = f + g
+# 	g = f - g
 
-	print (f)
+# 	print (f)
 
 
 # for variable in range(start, stop):
