@@ -59,17 +59,17 @@
 # 	print (f)
 
 
-# for i in range (10, 20):
-# 	if (i == 15): 
-# 		continue
-# 	print (i)
+for i in range (0, 10):
+	if (i == 5): 
+		continue
+	print (i)
 	
-# 	...
+	...
 
 
-i = 10
-while i < 20:
-	if i ==15:
+i = 0
+while i < 10:
+	if i ==5:
 		continue
 	print (i)
 	i += 1
