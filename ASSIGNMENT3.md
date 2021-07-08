@@ -22,4 +22,8 @@ or
 
 ## 4 Modify helloworld.py to compose a program that takes three names and writes a proper sentence with the names in the reverse of the order they are given, so that, for example, python helloworld.py Alice Bob Carol writes the string 'Hi Carol, Bob, and Alice'
 
-	print ('Hi {2}, {1} and {0}'.format ('Alice','Bob','Carol'))
+	first_name =str(input('Please enter the first name: '))
+	second_name =str(input('Please enter the second name: '))
+	third_name =str(input('Please enter the third name: '))
+
+	print ("Hi", third_name,",",second_name, "and", first_name )
