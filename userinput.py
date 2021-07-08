@@ -26,11 +26,11 @@
 
 # 	print (j)
 
-j = 1
-for i in range (0, 10):
-	j += j
+# j = 1
+# for i in range (0, 10):
+# 	j += j
 
-	print (j)
+# 	print (j)
 
 # for j in range (0, 10):
 #  	j += j
@@ -59,18 +59,17 @@ for i in range (0, 10):
 # 	print (f)
 
 
-# for variable in range(start, stop):
-# 	statement1
-# 	statement2
+# for i in range (10, 20):
+# 	if (i == 15): 
+# 		continue
+# 	print (i)
+	
 # 	...
 
 
-# variable = start
-# while variable < stop:
-# 	statement1
-# 	statement2
-
-# 	...
-
-# 	variable +=1
-
+i = 10
+while i < 20:
+	if i ==15:
+		continue
+	print (i)
+	i += 1
