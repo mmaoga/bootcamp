@@ -133,21 +133,35 @@
 
 
 	ANSWER: YES
-			for i in range (10, 20):
-			if (i == 15): 
+			for i in range (0, 10):
+			if (i == 5): 
 				continue
 			print (i)
 		
 			#...
 
 
-			i = 10
-			while i < 20:
-				if i ==15:
+			i = 0
+			while i < 10:
+				if i ==5:
 					continue
 				print (i)
 				i += 1
 
+		Output:
+			1
+			2
+			3
+			4
+			6
+			7
+			8
+			9
+			0
+			1
+			2
+			3
+			4
 
 
 
