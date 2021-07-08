@@ -19,46 +19,66 @@
 
 ## 5 What is the value of j after each of the following code fragments is executed?
 
-	## a 
-		0
-		1
-		3
-		6
-		10
-		15
-		21
-		28
-		36
-		45
+	## a 	j = 0
+			for i in range (0, 10):
+				j += i
+				print (j)
+		
+		Output:		
+			0
+			1
+			3
+			6
+			10
+			15
+			21
+			28
+			36
+			45
 
-	## b
-		2
-		4
-		8
-		16
-		32
-		64
-		128
-		256
-		512
-		1024
+	## b 	j = 1
+			for i in range (0, 10):
+				j += j
+				print (j)
+		
+		Output:
+			2
+			4
+			8
+			16
+			32
+			64
+			128
+			256
+			512
+			1024
 
-	## c
-		0
-		2
-		4
-		6
-		8
-		10
-		12
-		14
-		16
-		18
+	## c  	for j in range (0, 10):
+				j += j
+				print (j)
+		
+		Output:
+			0
+			2
+			4
+			6
+			8
+			10
+			12
+			14
+			16
+			18
 
 ## 6 what are m and n after the following code is executed?
 
-		
+		n = 123456789
+		m = 0
+		while n != 0:
+			m = (10 * m) + (n % 10)
+			n //= 10
+			print (m, n)
 
+	Output:
 		m    n
 		9 12345678
 		98 1234567
@@ -74,7 +94,14 @@
 
 ## 7 What does this code do?
 
+		f = 0
+		g = 1
+		for i in range (0, 10):
+			f = f + g
+			g = f - g
+			print (f)
 
+	Output:
 		1
 		1
 		2
