@@ -114,9 +114,39 @@
 		55
 
 
-## Bonus Qn  Is there an example for when the following for and while loops are not equivalent?
+## BONUS QN:  Is there an example for when the following for and while loops are not equivalent?
+
+			for variable in range(start, stop):
+				statement1
+				statement2
+				...
 
 
+			variable = start
+			while variable < stop:
+				statement1
+				statement2
+
+				...
+
+				variable +=1
+
+
+	ANSWER: YES
+			for i in range (10, 20):
+			if (i == 15): 
+				continue
+			print (i)
+		
+			#...
+
+
+			i = 10
+			while i < 20:
+				if i ==15:
+					continue
+				print (i)
+				i += 1
 
 
 
