@@ -1,64 +1,88 @@
+print ()
 import random
 
-input("Welcome to Rock, Paper, Scissors! Press Enter to start.")
+# input("Hello, Press Enter to start.")
 print()
-user_wins = 0
-computer_wins = 0
+
+user_input = str(input("Please enter your name: ")).upper()
+
+print ()
+
+print(user_input, ", Welcome to the Rock, Paper, Scissors Game! Here is the winning guide for the game!! \n\n"
+    +"Winning Rules of the game are as follows: \n"
+    +"(1)Rock vs paper->paper wins \n"
+    +"(2)Rock vs scissor->Rock wins \n"
+    +"(3)Paper vs scissor->scissor wins \n\n")
+
+
+player = 0
+computer = 0
+tie = 0
+game = 1
 
 choices = ["rock", "paper", "scissors"]
 
 while True:
   random_index = random.randint(0,2)
-  cpu_choice = choices[random_index]
+  computer_choice = choices[random_index]
 
-  user_choice = input("Rock, Paper, or Scissors? ").lower()
-  while user_choice not in choices:
-    user_choice = input("That is not a valid choice. Please try again: ").lower()
+  player_choice = input("Rock, Paper, or Scissors? ").lower()
+  while player_choice not in choices:
+    player_choice = input("That is not a valid choice. Please try again: ").lower()
   
   print()
-  print("Your choice:", user_choice)
-  print("Computer's choice:", cpu_choice)
+  print("Your choice:", player_choice)
+  print("Computer's choice:", computer_choice)
   print()
 
-  if user_choice == 'rock':
-    if cpu_choice == 'rock':
-      print("It's a tie!")
-    elif cpu_choice == 'scissors':
-      print("You win!")
-      user_wins+=1
-    elif cpu_choice == 'paper':
-      print("You lose!")
-      computer_wins+=1
-  elif user_choice == 'paper':
-    if cpu_choice == 'paper':
-      print("It's a tie!")
-    elif cpu_choice == 'rock':
-      print("You win!")
-      user_wins+=1
-    elif cpu_choice == 'scissors':
-      print("You lose!")
-      computer_wins+=1
-  elif user_choice == 'scissors':
-    if cpu_choice == 'scissors':
-      print("It's a tie!")
-    elif cpu_choice == 'paper':
-      print("You win!")
-      user_wins+=1
-    elif cpu_choice == 'rock':
-      print("You lose!")
-      computer_wins+=1
+  if player_choice == 'rock':
+    if computer_choice == 'rock':
+      print("It's a TIE!")
+      tie+=1
+    elif computer_choice == 'scissors':
+      print("You WIN!")
+      player+=1
+    elif computer_choice == 'paper':
+      print("You LOSE!")
+      computer+=1
+  elif player_choice == 'paper':
+    if computer_choice == 'paper':
+      print("It's a TIE!")
+      tie+=1
+    elif computer_choice == 'rock':
+      print("You WIN!")
+      player+=1
+    elif computer_choice == 'scissors':
+      print("You LOSE!")
+      computer+=1
+  elif player_choice == 'scissors':
+    if computer_choice == 'scissors':
+      print("It's a TIE!")
+      tie+=1
+    elif computer_choice == 'paper':
+      print("You WIN!")
+      player+=1
+    elif computer_choice == 'rock':
+      print("You WIN!")
+      computer+=1
 
   print()
-  print("You have "+str(user_wins)+" wins")
-  print("The computer has "+str(computer_wins)+" wins")
+  print(str(user_input) +" has "+str(player)+" winnings!")
+  print("The computer has "+str(computer)+" winnings!")
+  print ("Number of games tied: "+str(tie)+"!")
   print()
 
-  repeat = input("Play again? (Y/N) ").lower()
+  repeat = input("Would you like to Play again? (Y/N) ").lower()
   while repeat not in ['y', 'n']:
-    repeat = input("That is not a valid choice. Please try again: ").lower()
+    repeat = input("Invalid. Please try again: ").lower()
   
   if repeat == 'n':
     break
+  else:
+    game+=1
 
-  print("\n----------------------------\n")
+  print("\n.........\n"+"ROUND --  " +str(game)+"!"+"\n...........\n")
+  print ()
+
+ 
 
