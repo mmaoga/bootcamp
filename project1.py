@@ -4,7 +4,7 @@ import random
 # input("Hello, Press Enter to start.")
 print()
 
-user_input = str(input("Please enter your name: ")).upper()
+user_input = str(input("What is your name: ")).upper()
 
 print ()
 
@@ -28,7 +28,7 @@ while True:
 
   player_choice = input("Rock, Paper, or Scissors? ").lower()
   while player_choice not in choices:
-    player_choice = input("That is not a valid choice. Please try again: ").lower()
+    player_choice = input("Invalid choice. Please try again: ").lower()
   
   print()
   print("Your choice:", player_choice)
@@ -67,9 +67,11 @@ while True:
       computer+=1
 
   print()
-  print(str(user_input) +" has "+str(player)+" winnings!")
-  print("The computer has "+str(computer)+" winnings!")
-  print ("Number of games tied: "+str(tie)+"!")
+  print("     "+str(user_input) +" has "+str(player)+" winnings!")
+  print ("     .....")
+  print("     The computer has "+str(computer)+" winnings!")
+  print ("     .....")
+  print ("     Number of games tied: "+str(tie)+"!")
   print()
 
   repeat = input("Would you like to Play again? (Y/N) ").lower()
@@ -77,7 +79,12 @@ while True:
     repeat = input("Invalid. Please try again: ").lower()
   
   if repeat == 'n':
+    
+    print()
+    print ("Thank you for playing " +str(user_input) + ". We hope you Enjoyed!\nGoodbye!")
+    print ("\n..........\n")
     break
+
   else:
     game+=1
 
