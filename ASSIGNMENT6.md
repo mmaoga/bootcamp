@@ -1,12 +1,19 @@
 ## Qn.1 Compose a program that creates a one-dimensional array a containing exactly 1000 integers, and then attempts to access a[1000]. What happens when you run the program?
 
+	a) 1000
+	b) Value of the arrray at the start
+	c) value of the array at the end
+	d) indexing error
 
+	ANS. 
 
 ## Qn.2 What is wrong with the following code fragment?
 
 		a = []
 		for i in range(10):
 		    a[i] = i * i
+
+	ANS. 
 
 
 ## Qn.3 What does the following code fragment write?
