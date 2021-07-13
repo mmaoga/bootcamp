@@ -46,9 +46,23 @@
 # print (cars)
 
 
-cars = ["Ford", "Volvo", "BMW", "Range Rover", "Volkswagen", "Volvo"]
-cars.sort() # ascending SORTING
-print (cars)
+# cars = ["Ford", "Volvo", "BMW", "Range Rover", "Volkswagen", "Volvo"]
+# cars.sort() # ascending SORTING
+# print (cars)
+
+
+# a = []
+# for i in range (n):
+# 	a += [1000]
+
+# 	print (a)
+
+
+a = []
+for i in range(10):
+	a[i] = i * i
+
+print (a)
 
 #Quiz number 4 create an array and add stuff.
 #projects are to be completed by the end of the program by 28th July, 2021
