@@ -99,15 +99,18 @@
 
 import stdio
 from array import array
+import sys
 
-
-a = stdarray.create1D(10, 0)
-for i in range(10):
-	a[i] = 9 - i
+# def randomarray():
+	a = stdarray.create1D(10, 0)
+	for i in range(10):
+		a[i] = 9 - i
 	for i in range(10):
 		a[i] = a[a[i]]
 		for v in a:
 			stdio.writeln(v)
+
+			
 
 #Quiz number 4 create an array and add stuff.
 #projects are to be completed by the end of the program by 28th July, 2021
