@@ -5,8 +5,8 @@
 # 		
 
 
-def hello_func(greeting, name = "You"):
-	return "{}, {}.".format (greeting, name)
+# def hello_func(greeting, name = "You"):
+# 	return "{}, {}.".format (greeting, name)
 
 # print (hello_func("Hi", name = "Dennis"))
 
@@ -15,15 +15,31 @@ def hello_func(greeting, name = "You"):
 
 
 
-def student_info (*args, **kwargs):
-	print (args)
-	print (kwargs)
+# def student_info (*args, **kwargs):
+# 	print (args)
+# 	print (kwargs)
 
-courses = ["Marth", "Art"]
-info = {"name": "John", "age": 23}
+# courses = ["Marth", "Art"]
+# info = {"name": "John", "age": 23}
 
-student_info (*courses, **info)
+# student_info (*courses, **info)
 
 
+
+#1. ASSIGN A FUNCTION TO A VARIABLE
+
+def func (number):
+    print(number)
+
+a_variable = func
+
+a_variable(1)
+
+
+
+
+
+
+#2. A FUNCTION WITH ARGUMENT
 
 
